@@ -2,19 +2,20 @@
 @tailwind components;
 @tailwind utilities;
 
-/* Keep your existing custom CSS here */
-:root {
-  --primary: #6D28D9;
-  --primary-light: #8B5CF6;
-  --primary-dark: #4C1D95;
-  --white: #ffffff;
-  --light-gray: #f3f4f6;
-  --medium-gray: #d1d5db;
-  --dark-gray: #4b5563;
-  --black: #111827;
-  --success: #10B981;
-  --warning: #F59E0B;
-  --error: #EF4444;
+/* Personnalisation */
+@layer base {
+  html {
+    font-family: 'Poppins', sans-serif;
+    scroll-behavior: smooth;
+  }
 }
 
-/* Rest of your existing CSS */
+@layer components {
+  .btn-primary {
+    @apply bg-green-600 text-white px-6 py-2 rounded-full hover:bg-green-700 transition duration-300;
+  }
+  
+  .btn-secondary {
+    @apply border-2 border-green-600 text-green-600 px-6 py-2 rounded-full hover:bg-green-50 transition duration-300;
+  }
+}
