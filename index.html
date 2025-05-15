@@ -4,87 +4,12 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>AzerType</title>
-  <script src="https://cdn.tailwindcss.com"></script>
-  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
   <!-- Container principal -->
   <div class="container">
-    <!-- Titre -->
-    <header class="header">
-      <h1 class="title">AzerType</h1>
-      <h2 class="subtitle">L'application pour écrire plus vite !</h2>
-      <p class="description">AzerType est une application en ligne pour apprendre à taper plus vite au clavier :)</p>
-    </header>
-
-    <!-- Bloc principal -->
-    <main class="game-container">
-      <div class="instructions">
-        <h3>Veuillez choisir un mode et une difficulté, puis saisir la proposition affichée dans le champ ci-dessous</h3>
-      </div>
-      
-      <!-- Options selection -->
-      <div class="options-container">
-        <div class="mode-selection">
-          <h3>Mode</h3>
-          <div class="radio-group">
-            <label class="radio-label">
-              <input type="radio" name="mode" id="mots" class="radio-input" checked />
-              <span class="radio-text">Mots</span>
-            </label>
-            <label class="radio-label">
-              <input type="radio" name="mode" id="phrases" class="radio-input" />
-              <span class="radio-text">Phrases</span>
-            </label>
-          </div>
-        </div>
-
-        <div class="difficulty-selection">
-          <h3>Difficulté</h3>
-          <div class="radio-group">
-            <label class="radio-label">
-              <input type="radio" name="difficulty" id="facile" class="radio-input" checked />
-              <span class="radio-text">Facile</span>
-            </label>
-            <label class="radio-label">
-              <input type="radio" name="difficulty" id="moyen" class="radio-input" />
-              <span class="radio-text">Moyen</span>
-            </label>
-            <label class="radio-label">
-              <input type="radio" name="difficulty" id="difficile" class="radio-input" />
-              <span class="radio-text">Difficile</span>
-            </label>
-          </div>
-        </div>
-      </div>
-
-      <!-- Zone de jeu -->
-      <div class="game-area">
-        <!-- Mot/Phrase affiché -->
-        <div class="display-text-container">
-          <input type="text" class="display-text" id="mot-phrase" readonly />
-        </div>
-
-        <!-- Zone de saisie -->
-        <div class="input-container">
-          <input type="text" id="saisie" class="text-input" placeholder="Tapez le texte ici et appuyez sur Entrée..." autocomplete="off" />
-          <div class="input-hint">Appuyez sur <kbd>Entrée</kbd> pour valider</div>
-        </div>
-
-        <!-- Stats -->
-        <div class="stats-container">
-          <div class="score-container">
-            <p id="score" class="score">Votre score : 0 / 0</p>
-          </div>
-          <div class="timer-container">
-            <span id="chronometre" class="timer">00:00</span>
-            <button type="button" id="stop" class="submit-button">Soumettre</button>
-          </div>
-        </div>
-      </div>
-    </main>
-
-    <div id="alert-container" class="alert-container"></div>
+    <!-- Rest of your existing HTML -->
   </div>
 
   <script src="js/data.js"></script>

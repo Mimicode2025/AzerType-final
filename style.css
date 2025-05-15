@@ -1,0 +1,20 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Keep your existing custom CSS here */
+:root {
+  --primary: #6D28D9;
+  --primary-light: #8B5CF6;
+  --primary-dark: #4C1D95;
+  --white: #ffffff;
+  --light-gray: #f3f4f6;
+  --medium-gray: #d1d5db;
+  --dark-gray: #4b5563;
+  --black: #111827;
+  --success: #10B981;
+  --warning: #F59E0B;
+  --error: #EF4444;
+}
+
+/* Rest of your existing CSS */
